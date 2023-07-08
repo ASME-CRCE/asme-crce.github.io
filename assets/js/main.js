@@ -48,16 +48,16 @@
   onscroll(document, navbarlinksActive)
 
   
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
+  // const scrollto = (el) => {
+  //   let header = select('#header')
+  //   let offset = header.offsetHeight
 
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
+  //   let elementPos = select(el).offsetTop
+  //   window.scrollTo({
+  //     top: elementPos - offset,
+  //     behavior: 'smooth'
+  //   })
+  // }
 
   
   let selectHeader = select('#header')
@@ -119,13 +119,13 @@
   }, true)
 
   
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
+  // window.addEventListener('load', () => {
+  //   if (window.location.hash) {
+  //     if (select(window.location.hash)) {
+  //       scrollto(window.location.hash)
+  //     }
+  //   }
+  // });
 
   
   let preloader = select('#preloader');
@@ -136,9 +136,9 @@
   }
 
   
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
 
   
   let skilsContent = select('.skills-content');
@@ -184,24 +184,24 @@
   });
 
   
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+  // const portfolioLightbox = GLightbox({
+  //   selector: '.portfolio-lightbox'
+  // });
 
   
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  // new Swiper('.portfolio-details-slider', {
+  //   speed: 400,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   }
+  // });
 
   
   window.addEventListener('load', () => {
