@@ -786,13 +786,37 @@ section .section-title {
   transform-style: preserve-3d;
 }
 
-.frontside .card,
-.backside .card {
-  min-height: 312px;
-  border-radius: 60px;
-  /* background-color: white; */
-  background: radial-gradient(24.1% 68.8%, rgb(255, 255, 255) 0%, rgb(197, 196, 196) 99.4%);
+@media screen and (min-width:580px){
+  .backside .card {
+    min-height: 312px;
+    border-radius: 60px;
+    /* background-color: white; 510*/
+    background: radial-gradient(24.1% 68.8%, rgb(255, 255, 255) 0%, rgb(197, 196, 196) 99.4%);
+  
+  }
+  
+  .frontside .card{
+    min-height: 312px;
+    background: radial-gradient(24.1% 68.8%, rgb(255, 255, 255) 0%, rgb(197, 196, 196) 99.4%);
+  }
+}
 
+
+@media screen and (max-width:480px) {
+  .backside .card {
+    min-height: 260px;
+    border-radius: 60px;
+    /* background-color: white; 510*/
+    background: radial-gradient(24.1% 68.8%, rgb(255, 255, 255) 0%, rgb(197, 196, 196) 99.4%);
+  
+  }
+  
+  .frontside .card{
+    min-height: 312px;
+    border-radius: 60px;
+    background: radial-gradient(24.1% 68.8%, rgb(255, 255, 255) 0%, rgb(197, 196, 196) 99.4%);
+  }
+  
 }
 
 .backside .card a {
